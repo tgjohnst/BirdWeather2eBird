@@ -1,3 +1,7 @@
+"""Validation module for eBird data fields.
+This module provides a set of validation functions to ensure that the data fields conform to eBird's requirements, as outlined in Appendix A (PDF spec).
+"""
+
 import re
 
 class ValidationException(Exception):
