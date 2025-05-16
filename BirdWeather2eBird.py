@@ -207,7 +207,7 @@ def process_and_validate_row(input_row, args, config, validator, logger):
 def main():
     args = cli_support.input_argparse()
     logger = cli_support.start_logging(config.log_file_path, config.log_level, config.tool_name)
-    validator = validation.Validation(logger)
+    validator = Validator(logger)
 
     logger.info('Running BirdWeather2eBird')
     logger.debug(f'Input File: {args.input_file}')
